@@ -6,6 +6,7 @@ body{
     display: grid;
     grid-template-columns: 1fr 20vw;
     grid-template-rows: 10vh 5vh 1fr 10vh;
+    overflow: hidden;
 }
 #header{
     grid-column: span 2;
@@ -35,9 +36,28 @@ a{
     font-size: 1.2em;
     padding: .5vw;
 }
-a:hover{
-    
+ul a{
+    text-decoration: underline;
 }
+ul li{
+    margin-right: 20px;
+    margin-top: 5px
+}
+ul li a:hover{
+    color:gray
+}
+nav a:hover{
+    color:black
+}
+main p a{
+    color:gray;
+    font-size: 16px
+}
+#sideBarList{
+    margin-left: 0;
+}
+
+
 nav{
     grid-column: span 3;
     background-color: #C0C0C0;
@@ -49,6 +69,12 @@ main{
     width: 60vw;
     margin-left: 2vw;
 }
+main h1{
+    font-family: acumin-pro-condensed, "Arial", sans-serif;
+}
+main h3{
+    font-family: acumin-pro-condensed, "Arial", sans-serif;
+}
 .sidebar{
     background-color: #C0C0C0;
 }
@@ -59,4 +85,11 @@ main{
 footer{
     background-color: gray;
     grid-column: span 3;
+    margin: auto;
+    width: 100vw;
+    height: 10vh;
+    padding-top: 2%;
+}
+form{
+    align-self: center;
 }
